@@ -1,5 +1,5 @@
 <div ng-controller="educationCtrl" layout="column" ng-cloak >
-  <md-content layout-padding  class="details_page">
+  <md-content  class="educationdetails" layout-align="center center" layout-wrap="">
     <div class="form_heading">
       <h2>What’s your Education Details ?</h2>
     <p style="position: relative;top:-16px; ;">Enter Your education details </p>
@@ -19,7 +19,7 @@
         </div>
       </md-input-container>
 
-      <md-input-container class="md-block" flex="40">
+      <md-input-container class="md-block" flex="50">
         <label>City *</label>
         <md-icon md-font-icon="android" aria-label="android">
           <span class="material-icons">
@@ -53,7 +53,7 @@
 
       
 
-      <md-input-container flex="25">
+      <md-input-container flex="25" style="position: relative; top:-10px">
         <label>Select Degree</label>
         <md-icon md-font-icon="android" aria-label="android"> 
           <span class="material-icons">
@@ -62,7 +62,7 @@
 
         </md-icon>
        
-        <md-select name="degree" ng-model="educationDetails.degree" required>
+        <md-select name="degree" ng-model="educationDetails.degree"  required>
         <md-option value="High School Diploma">High School Diploma</md-option>
         <md-option value="GED">GED</md-option>
         <md-option value="Associate of Arts">Associate of Arts</md-option>
@@ -126,7 +126,7 @@
           </div>
           </md-input-container>
       
-          <md-input-container flex="30">
+          <md-input-container flex="35">
             <label>Year Of Graduation</label>
             <md-icon md-font-icon="android" aria-label="android">
               <span class="material-icons">
@@ -210,7 +210,7 @@
 
 
 
-      <div layout="row" layout-align="space-between">
+      <div layout="row" layout-align="space-between" style="margin-top:1em">
         <md-button class="md-raised md-accent backbutton" flex="15" ng-click="navigateBack('/')" style="color:white">Back</md-button>
         <div flex="70"></div>
         <md-button type="submit" ng-disabled="education_form.$invalid" class="md-raised md-primary saveandnext" flex="15" ng-click="update(educationDetails)"> Save & Next</md-button>
