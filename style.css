@@ -17,11 +17,12 @@ background: linear-gradient(to right, #6E48AA, #9D50BB); /* W3C, IE 10+/ Edge, F
       position: absolute;
       left: 25%;
       top: 20%;
-      max-width: 60vw;
+      max-width: 70vw;
       min-width: 20vw;
   }
   .form_details{
       margin-left: 2em;
+      margin-right: 1vw;
   }
   .form_heading{
     text-align: center;
@@ -77,7 +78,7 @@ background: linear-gradient(to right, #6E48AA, #9D50BB); /* W3C, IE 10+/ Edge, F
 }
 .addskill{
   position:relative;
-  left:-20px;
+  left:-1em;
   border-radius:4px;
   padding: 4px;
   width: 40px;
