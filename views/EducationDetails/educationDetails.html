@@ -19,7 +19,7 @@
         </div>
       </md-input-container>
 
-      <md-input-container class="md-block" flex="50">
+      <md-input-container class="md-block" flex="40">
         <label>City *</label>
         <md-icon md-font-icon="android" aria-label="android">
           <span class="material-icons">
@@ -126,7 +126,7 @@
           </div>
           </md-input-container>
       
-          <md-input-container flex="35">
+          <md-input-container flex="30">
             <label>Year Of Graduation</label>
             <md-icon md-font-icon="android" aria-label="android">
               <span class="material-icons">
@@ -210,10 +210,10 @@
 
 
 
-      <div layout="row" layout-align="space-between" style="margin-top:1em">
-        <md-button class="md-raised md-accent backbutton" flex="15" ng-click="navigateBack('/')" style="color:white">Back</md-button>
-        <div flex="70"></div>
-        <md-button type="submit" ng-disabled="education_form.$invalid" class="md-raised md-primary saveandnext" flex="15" ng-click="update(educationDetails)"> Save & Next</md-button>
+      <div layout="row"  style="margin-top:1em" layout-wrap="">
+        <md-button class="md-raised md-accent backbutton" flex="20" ng-click="navigateBack('/')" style="color:white">Back</md-button>
+        <div flex="55"></div>
+        <md-button type="submit" ng-disabled="education_form.$invalid" class="md-raised md-primary saveandnext" flex="20" ng-click="update(educationDetails)"> Save & Next</md-button>
       </div>
 
    </form>
