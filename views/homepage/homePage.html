@@ -1,10 +1,10 @@
 <div ng-controller="homepageCtrl" layout="column" ng-cloak >
-  <md-content layout-padding class="details_page">
+  <md-content layout-padding class="details_page" layout-align="center center">
     <div class="form_heading">
       <h2>What’s the best way for employers to contact you?</h2>
     <p style="position: relative;top:-16px; ;">We suggest including an email and phone number.</p>
     </div>
-     <form name="personal_details" class="form_details">
+     <form name="personal_details" class="form_details" layout-align="center center">
       <div layout="row">
         <md-input-container class="md-block" flex="25">
         <label>First Name</label>
@@ -119,8 +119,8 @@
       </div>
       <div layout="row">
         <!-- <md-button class="md-raised md-accent backbutton" flex="20" ng-click="navigateBack('/')" style="color:white">Back</md-button> -->
-        <div flex="85"></div>
-        <md-button ng-disabled="personal_details.$invalid" type="submit" class="md-raised md-primary saveandnext" flex="15" ng-click="update(personaldetails)">Save & Next</md-button>
+        <div flex="75"></div>
+        <md-button ng-disabled="personal_details.$invalid" type="submit" class="md-raised md-primary saveandnext" flex="20" ng-click="update(personaldetails)">Save & Next</md-button>
       </div>
    </form>
 </div>
