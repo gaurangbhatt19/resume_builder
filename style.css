@@ -88,11 +88,11 @@ background: linear-gradient(to right, #6E48AA, #9D50BB); /* W3C, IE 10+/ Edge, F
 .educationdetails{
   min-width: 40vw;
   min-height: 40vh;
-  height: 70vh;
+  height: 65vh;
   width: 55vw;
   border-radius:10px;
   padding-right: 20px;
   position: absolute;
-  left:25%;
+  left:20%;
   top: 20%;
 }
