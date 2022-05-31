@@ -1,0 +1,89 @@
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none;
+}
+.navBardemoBasicUsage md-content .ext-content {
+    padding: 50px;
+    margin: 20px;
+    background-color: #FFF2E0;
+  }
+  body{
+    background: #9D50BB;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6E48AA, #9D50BB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100%;
+  width: 100%;
+  }
+  .details_page{
+      border:purple solid 2px;
+      border-radius: 10px;
+      margin-left: 25vw;
+      margin-top: 20vh;
+      max-width: 50vw;
+      min-width: 20vw;
+      
+  }
+  .form_details{
+      margin-left: 6em;
+      margin-right:4em;
+  }
+  .form_heading{
+      margin-left: 8em;
+      margin-right: 5em;
+      margin-top: 1em;
+  }
+  .buttondemoBasicUsage section {
+    border-radius: 3px;
+    text-align: center;
+    margin: 1em;
+    position: relative !important;
+  }
+  .buttondemoBasicUsage section .md-button {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .buttondemoBasicUsage .label {
+    position: absolute;
+    bottom: 5px;
+    left: 7px;
+    font-size: 14px;
+  }
+
+.inputdemoErrors .inputErrorsApp {
+  min-height: 48px;
+}
+.inputdemoErrors md-input-container > p {
+  font-size: 0.8em;
+  text-align: left;
+  width: 100%;
+}
+.backbutton{
+  position:relative;
+  border-radius:4px;
+  padding: 4px;
+  color:white
+}
+
+.saveandnext{
+  position:relative;
+  left:-20px;
+  border-radius:4px;
+  padding: 4px;
+}
+
+.skill_page{
+  border:purple solid 2px;
+  border-radius: 10px;
+  margin-left: 20vw;
+  margin-top: 20vh;
+  max-width: 60vw;
+  min-width: 20vw;
+  
+}
+.addskill{
+  position:relative;
+  left:-20px;
+  border-radius:4px;
+  padding: 4px;
+  width: 40px;
+  height: 50px;
+}

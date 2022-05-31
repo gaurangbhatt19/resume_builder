@@ -1,0 +1,67 @@
+<div ng-controller="skillCtrl" layout="column" ng-cloak>
+    <md-content layout-padding class="skill_page">
+      
+        <div layout="row" class="form_heading">
+           <h2 flex="90">What are the best skills you currently have?</h2>
+           <md-button flex="20" class="md-raised md-primary addskill" flex="10" ng-click="addSkill()"><span class="material-icons" style="position: relative; top:5px;left:-4px">add</span>Add</md-button>
+        </div>  
+     
+      <!-- <div layout="row">
+        <md-button class="md-raised md-primary" flex="10" ng-click="addSkill()"><span class="material-icons" style="position: relative; top:5px;left:-4px">add</span>Add</md-button>
+      </div>
+         -->
+
+      <div id="skill_div">
+      <form name="skills_form" class="form_details">
+        <div style="max-height: 40vh;overflow-y: scroll;overflow-x: hidden;padding:30px">
+        <div layout="row" id="skill_row" ng-repeat="skill_values in resumeSkills track by $index" >
+          <md-input-container class="md-block" flex="50">
+          <label>Skill Name </label>
+          <md-icon md-font-icon="android" aria-label="android">
+            <span class="material-icons">
+              school
+              </span>
+          </md-icon>
+          <input required md-no-asterisk name="skill" ng-model="educationDetails.skill"/>
+          <div ng-messages="education_form.school_name.$error">
+            <div ng-message="required">This is required.</div>
+          </div>
+         </md-input-container>
+
+         <md-input-container flex="50">
+          <label>Professiency level</label>
+          <md-select name="skill_level" ng-model="educationDetails.level" required ng-change="update(skill_values.id,educationDetails.skill,educationDetails.level)">
+          <md-option value="Begginer">Begginer</md-option>
+          <md-option value="Intermediate">Intermediate</md-option>
+          <md-option value="Advance">Advance</md-option>
+          </md-select>
+          <div ng-messages="education_form.degree.$error">
+            <div ng-message="required">This is required.</div>
+            <!-- <div ng-message="md-maxlength">First Name must have less than 50 characters</div> -->
+          </div>
+        </md-input-container>
+
+       <div>
+          <span ng-click="deleteSkill(skill_values.id)" class="material-icons" style="width: 1em;height:1em; cursor: pointer; margin-top:30px; position:relative;top:1px;right:-1em" >
+            clear
+            </span>
+       </div>
+
+
+        </div>
+        </div>
+
+        <div layout="row" style="margin-top: 1em;">
+          <md-button style="margin-left: 40px;border-radius: 4px; max-height: 50px;color:white" class="md-raised md-accent backbutton" flex="20" ng-click="navigateBack('/education')">Back</md-button>
+          <div flex="50"></div>
+          <md-button style="margin-left: 40px;border-radius: 4px; max-height: 50px;" class="md-raised md-primary saveandnext" flex="20" ng-click="saveNext()">Save & Next</md-button>
+        </div>
+<!--       
+      <span class="material-icons" style="position: relative; top:5px;left:-4px; color:white">arrow_back</span>
+      <span class="material-icons" style="position: relative; top:5px;left:-4px">arrow_forward</span> -->
+    
+      </div>
+      </form>
+       
+
+  </div>

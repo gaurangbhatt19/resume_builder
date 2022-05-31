@@ -1,0 +1,131 @@
+<div ng-controller="homepageCtrl" layout="column" ng-cloak >
+  <md-content layout-padding class="details_page">
+    <div class="form_heading">
+      <h2>What’s the best way for employers to contact you?</h2>
+    <p style="position: relative;top:-16px; ;">We suggest including an email and phone number.</p>
+    </div>
+     <form name="personal_details" class="form_details">
+      <div layout="row">
+        <md-input-container class="md-block" flex="25">
+        <label>First Name</label>
+        <md-icon md-font-icon="android" aria-label="android">
+          <span class="material-icons">
+            account_circle
+            </span>
+        </md-icon>
+        <input required md-no-asterisk name="first_name" ng-model="personaldetails.first_name" >
+        <div ng-messages="personal_details.first_name.$error">
+          <div ng-message="required">This is required.</div>
+        </div>
+
+
+      </md-input-container>
+      <md-input-container class="md-block" flex="30">
+        <label>Last Name</label>
+        <md-icon md-font-icon="android" aria-label="android">
+          <span class="material-icons">
+            account_circle
+            </span>
+        </md-icon>
+        <input required md-no-asterisk name="last_name" ng-model="personaldetails.last_name" >
+        <div ng-messages="personal_details.last_name.$error" >
+          <div ng-message="required">This is required.</div>
+          <!-- <div ng-message="md-maxlength">Full Name must have less than 50 characters</div> -->
+        </div>
+      </md-input-container>
+      <md-input-container class="md-block" flex="35">
+        <label>Phone Number</label>
+        <md-icon md-font-icon="android" aria-label="android">
+          <span class="material-icons">
+            phone
+            </span>
+        </md-icon>
+        <input md-maxlength="10" md-no-asterisk name="phone_number" ng-model="personaldetails.phone_number" >
+        <div ng-messages="personal_details.phone_number.$error">
+          <div ng-message="md-maxlength">Phone number should have 10 digits</div>
+        </div>
+      </md-input-container>
+      </div>
+
+
+      <div layout="row">
+        <md-input-container class="md-block" flex="55">
+        <label>Current Designation</label>
+        <md-icon md-font-icon="android" aria-label="android">
+          <span class="material-icons">
+            work
+            </span>
+        </md-icon>
+        <input md-maxlength="50" required md-no-asterisk name="designation" ng-model="personaldetails.designation" >
+        <div ng-messages="personal_details.designation.$error">
+          <div ng-message="required">This is required.</div>
+          <!-- <div ng-message="md-maxlength">First Name must have less than 50 characters</div> -->
+        </div>
+      </md-input-container>
+
+      <md-input-container class="md-block" flex="35">
+        <label>Email</label>
+        <md-icon md-font-icon="android" aria-label="android">
+          <span class="material-icons">
+            alternate_email
+            </span>
+        </md-icon>
+        <input type="email" md-no-asterisk name="email" ng-model="personaldetails.email" >
+        <div ng-messages="personal_details.email.$error">
+          <div ng-message="md-maxlength">Enter Valid Email</div>
+        </div>
+      </md-input-container>
+      </div>
+
+      <div layout="row">
+        <md-input-container class="md-block" flex="30">
+        <label>City</label>
+        <md-icon md-font-icon="android" aria-label="android">
+          <span class="material-icons">
+            location_city
+            </span>
+        </md-icon>
+        <input required md-no-asterisk name="city" ng-model="personaldetails.city" >
+        <div ng-messages="personal_details.city.$error">
+          <div ng-message="required">This is required.</div>
+          <!-- <div ng-message="md-maxlength">First Name must have less than 50 characters</div> -->
+        </div>
+      </md-input-container>
+
+      <md-input-container class="md-block" flex="30">
+        <label>Country</label>
+        <md-icon md-font-icon="android" aria-label="android">
+          <span class="material-icons">
+            flag
+            </span>
+        </md-icon>
+        <input md-no-asterisk required name="country" ng-model="personaldetails.country" >
+        <div ng-messages="personal_details.country.$error">
+          <div ng-message="md-maxlength">This is required.</div>
+        </div>
+      </md-input-container>
+
+      <md-input-container class="md-block" flex="30">
+        <label>Pincode</label>
+        <md-icon md-font-icon="android" aria-label="android">
+          <span class="material-icons">
+            home_filled
+            </span>
+        </md-icon>
+        <input md-no-asterisk name="pincode" ng-model="personaldetails.pincode" >
+      </md-input-container>
+
+
+      </div>
+      <div layout="row">
+        <md-button class="md-raised md-accent backbutton" flex="15" ng-click="navigateBack('/')" style="color:white">Back</md-button>
+        <div flex="70"></div>
+        <md-button ng-disabled="personal_details.$invalid" type="submit" class="md-raised md-primary saveandnext" flex="15" ng-click="update(personaldetails)">Save & Next</md-button>
+      </div>
+
+   </form>
+   
+
+
+
+</div>
