@@ -1,6 +1,7 @@
 <div ng-controller="resumeCtrl" layout="column" ng-cloak class="resume_container" layout-align="start center">
     <div class="" layout="row" layout-align="center">
         <md-button class="md-raised md-accent" id="download_resume">Download Resume</md-button>
+        <md-button class="md-raised md-primary" id="download_resume" ng-click="navigate()">Back To Home</md-button>
     </div>
         <md-content id="resume_div" md-colors="{background: 'default-background-hue-3'}" layout-padding>
             <div class="heading" layout="column">
@@ -71,7 +72,7 @@
                 <h3 style="margin-right: 1em">SKILLS</h3>  
                 <md-divider></md-divider>
                 <div class="resume_item" layout="row" layout-align="space-around" layout-wrap="">
-                    <div ng-repeat="skill in skills track by $index" class="skill_item" flex="20">
+                    <div ng-repeat="skill in skills track by $index" class="skill_item" flex="10">
                         <strong>{{skill.skillName}}</strong>
                         <br/>
                         <span>{{skill.proficiency}}</span>

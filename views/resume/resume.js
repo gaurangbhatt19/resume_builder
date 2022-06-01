@@ -21,7 +21,7 @@ resume.config(["$routeProvider",function($routeProvider) {
     
 }])
 
-resume.controller("resumeCtrl",['$scope','allformvalues',"workexperience",function($scope,allformvalues,workexperience){
+resume.controller("resumeCtrl",['$scope','$location','allformvalues',"workexperience",function($scope,$location,allformvalues,workexperience){
 let values=allformvalues.getValues()
 console.log(values)
 // if(values.workexperience!==undefined){
@@ -59,5 +59,10 @@ console.log(startdatevalue,enddatevalue)
  $scope.education=values.educationaldetails[0]
  $scope.educationdate=values.educationaldetails[0].month+" / "+values.educationaldetails[0].year
  $scope.skills=values.skills
+
+ $scope.navigate=function(){
+     $location.path("/")
+ }
+
 //  values.workexperience.startdate.split(" ").splice(1,4)+" to "+values.workexperience.enddate.split(" ").splice(1,4)
 }])
