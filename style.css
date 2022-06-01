@@ -18,9 +18,6 @@ height: 100%;
   .details_page{
       border:purple solid 2px;
       border-radius: 10px;
-      position: absolute;
-      left: 25%;
-      top: 20%;
       max-width: 70vw;
       min-width: 20vw;
   }
@@ -96,9 +93,7 @@ height: 100%;
   width: 55vw;
   border-radius:10px;
   padding-right: 20px;
-  position: absolute;
-  left:20%;
-  top: 20%;
+
 }
 #resume_div{
 width: 70vw;
@@ -118,14 +113,15 @@ margin-bottom: 4vh;
   width: 60vw;
   border-radius:10px;
   padding-right: 20px;
-  position: absolute;
+  /* position: absolute;
   left:20%;
-  top: 10%;
+  top: 10%; */
 }
 .resume_container{
-  background-color: #00C9FF;  /* fallback for old browsers */
-  background-color: -webkit-linear-gradient(to left, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
-  background-color: linear-gradient(to right, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  background-image: #00416A;  /* fallback for old browsers */
+background-image: -webkit-linear-gradient(to right, #FFE000, #799F0C, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
+background-image: linear-gradient(to right, #FFE000, #799F0C, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   height: 100%;
 }
@@ -188,4 +184,9 @@ font-family: 'Source Sans Pro', sans-serif;
 .heading{
   border-radius: 10px;
   padding-bottom:1em;
+}
+
+.form_layout{
+  width:100%;
+  height:100%;
 }
