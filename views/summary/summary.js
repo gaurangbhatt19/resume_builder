@@ -12,7 +12,7 @@ projects.controller("summaryCtrl",['$scope','$location',"allformvalues",function
         values.summary=details
         allformvalues.setValues(values)
         console.log(allformvalues.getValues())
-      $location.path("/resume")
+        $location.path("/resume")
     }
     $scope.navigateBack=function(path){
     //   console.log(path)

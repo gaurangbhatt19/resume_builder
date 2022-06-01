@@ -1,0 +1,122 @@
+<div ng-controller="workexperienceCtrl" layout="column" ng-cloak >
+    <md-content  class="workexperience" layout-align="center center" layout-wrap="">
+      <div class="form_heading">
+        <h2>What’s your Work Experience ?</h2>
+      <p style="position: relative;top:-12px; ;">Can include internships and training experience</p>
+      </div>
+       <form name="workexperience_form" class="form_details" >
+        <div layout="row" layout-align="center center">
+          <md-input-container class="md-block" flex="50">
+          <label>Company / Institute Name</label>
+          <md-icon md-font-icon="android" aria-label="android">
+            <span class="material-icons">
+              school
+              </span>
+          </md-icon>
+          <input md-no-asterisk name="companyname" ng-model="workDetails.companyname" >
+        </md-input-container>
+  
+        <md-input-container class="md-block" flex="40">
+          <label>City *</label>
+          <md-icon md-font-icon="android" aria-label="android">
+            <span class="material-icons">
+              location_city
+              </span>
+          </md-icon>
+          <input md-no-asterisk name="city" ng-model="workDetails.city" >
+          
+        </md-input-container>
+       
+        </div>
+  
+  
+        <div layout="row" layout-align="center center">
+          <md-input-container class="md-block" flex="30">
+          <label>State </label>
+          <md-icon md-font-icon="android" aria-label="android">
+            <span class="material-icons">
+              location_city
+              </span>
+          </md-icon>
+          <input md-no-asterisk name="state" ng-model="workDetails.state" >
+        </md-input-container>
+        
+  
+        
+  
+        <md-input-container flex="25" style="position: relative; top:-10px">
+          <label>Work Type</label>
+          <md-icon md-font-icon="android" aria-label="android"> 
+            <span class="material-icons">
+            school
+          </span>
+  
+          </md-icon>
+         
+          <md-select name="worktype" ng-model="workDetails.worktype">
+          <md-option value="Employee">Employee</md-option>
+          <md-option value="Internship">Internship</md-option>
+          <md-option value="Contract">Contract</md-option>
+          <md-option value="Freelance">Freelance</md-option>
+          </md-select>
+        </md-input-container>
+        
+        <md-input-container class="md-block" flex="35">
+          <label>Field / Designation</label>
+          <md-icon md-font-icon="android" aria-label="android">
+            <span class="material-icons">
+              local_library
+              </span>
+          </md-icon>
+          <input md-no-asterisk name="designation" ng-model="workDetails.designation" >
+        </md-input-container>
+        </div>
+         <div layout="row" layout-align="center center">
+            <md-input-container flex="90" class="md-block">
+                <label>Work Description</label>
+                <textarea ng-model="workDetails.description" md-maxlength="400" rows="3" md-select-on-focus></textarea>
+              </md-input-container>
+        </div>
+        <div layout="row" layout-align="center center">
+            <md-input-container class="md-block" flex="30">
+                <label>Start Date</label>
+                <md-icon md-font-icon="android" aria-label="android">
+                    <span class="material-icons">
+                        calendar_today
+                        </span>
+                </md-icon>
+                <input type="date" md-no-asterisk name="startdate" ng-model="workDetails.startdate" >
+              </md-input-container>
+
+              <md-input-container class="md-block" flex="30">
+                <label>End Date</label>
+                <md-icon md-font-icon="android" aria-label="android">
+                    <span class="material-icons">
+                        calendar_today
+                        </span>
+                </md-icon>
+                <input type="date" md-no-asterisk name="enddate" ng-model="workDetails.enddate" >
+              </md-input-container>
+  
+  
+            <md-button style="margin-left: 40px;border-radius: 4px; max-height: 40px;" class="md-raised md-primary" flex="10" ng-click="addwork()"><span class="material-icons" style="position: relative; top:5px;left:-4px">add</span>Add</md-button>
+            <md-button style="border-radius: 4px; max-height: 40px;" class="md-raised md-primary" flex="15" ng-click="showwork()">Show List</md-button>
+  
+            
+        </div>
+        
+  
+  
+  
+        <div layout="row" layout-wrap="">
+          <md-button class="md-raised md-accent backbutton" flex="20" ng-click="navigateBack('/education')" style="color:white; margin-left: 2em;">Back</md-button>
+          <div flex="50"></div>
+          <md-button type="submit" style="margin-left: 2em;" ng-disabled="workexperience_form.$invalid" class="md-raised md-primary saveandnext" flex="20" ng-click="update(workDetails)"> Save & Next</md-button>
+        </div>
+  
+     </form>
+     
+  
+  
+  
+  </div>

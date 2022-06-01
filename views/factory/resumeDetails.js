@@ -6,11 +6,16 @@ resume.factory("allformvalues",function(){
     }
     var values={
         personaldetails:{
-
+            
         },
         educationaldetails:{
 
-        },skills:{
+        },
+        workexperience:{
+            
+        }
+        
+        ,skills:{
 
         },summary:{
 

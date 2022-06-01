@@ -8,11 +8,9 @@
         <div layout="row">
             <md-input-container flex="95" class="md-block">
                 <label>Summary</label>
-                <textarea ng-model="summaryForm.summary" md-maxlength="250" rows="5" md-select-on-focus></textarea>
+                <textarea required ng-model="summaryForm.summary" md-maxlength="400" rows="5" md-select-on-focus></textarea>
               </md-input-container>
         </div>
-
-  
         <div layout="row">
           <md-button class="md-raised md-accent backbutton" flex="15" ng-click="navigateBack('/skills')" style="color:white">Back</md-button>
           <div flex="65"></div>

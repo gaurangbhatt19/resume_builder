@@ -1,0 +1,85 @@
+<div ng-controller="resumeCtrl" layout="column" ng-cloak class="resume_container" layout-align="start center">
+    <!-- <md-content md-colors="{background: 'default-background-hue-3'}" style="margin-bottom:2em" layout-padding>
+        <div class="">
+            <md-button class="md-raised md-primary"><h4>Download Resume</h4></md-button>
+        </div>
+    </md-content> -->
+        <md-content id="resume_div" md-colors="{background: 'default-background-hue-3'}" layout-padding>
+            <div class="heading" layout="column">
+            <div layout="row" layout-align="start center">
+                <div id="fullname">
+                    <span>{{fullname}}</span>
+                  </div>
+            </div>
+            <div layout="row" layout-align="start center">
+                <div id="designation">
+                    <span>{{designation}}</span>
+                  </div>
+            </div>
+
+            <div layout="row" layout-align="start center">
+                <div id="description">
+                    <span>{{description}}</span>
+                  </div>
+            </div>
+            <div layout="row" layout-align="start center">
+                <div id="contact">
+                    <span>{{contact}}</span>
+                  </div>
+            </div>
+            </div>
+            <div class="professional_summary resume_item" layout="column">
+                <h3>PROFESSIONAL SUMMARY</h3> 
+                <md-divider></md-divider> 
+                <span class="item_value">{{professional_summary}}</span>
+            </div>
+            <div class="employeement_history resume_item" layout="column">
+                <h3>EMPLOYEMENT HISTORY</h3>  
+                <md-divider></md-divider>
+                <div layout="row" layout-align="space-between">
+                    <span class="item_value employeement_history_companyname">{{employement_history.companyname}}, ({{employement_history.worktype}})</span>
+                    <span class="item_value">{{employement_history.city}}, {{employement_history.state}}</span>
+                </div>
+                <div layout="column" layout-align="start start">
+                    <div layout="row" class="item_value">
+                        <span>{{employement_history_date}}</span>
+                    </div>
+                    <div layout="row" class="item_value">
+                        <span>{{employement_history.description}} Description</span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="education_details resume_item" layout="column">
+                <h3>EDUCATION DETAILS</h3>  
+                <md-divider></md-divider>
+                <div layout="row" layout-align="space-between">
+                    <span class="item_value employeement_history_companyname">{{education.degree}}, {{education.fieldofstudy}} {{education.school_name}}</span>
+                    <span class="item_value">{{education.city}}, {{education.state}}</span>
+                </div>
+                <div layout="column" layout-align="start start">
+                    <div layout="row" class="item_value">
+                        <span>{{educationdate}}</span>
+                    </div>
+                    <div layout="row" class="item_value">
+                        <span>{{education.school_name}}Name</span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="skills resume_item" layout="row">
+                <h3 style="margin-right: 1em">SKILLS</h3>  
+                <md-divider></md-divider>
+                <div class="resume_item" layout="row" layout-align="space-around" layout-wrap="">
+                    <div ng-repeat="skill in skills track by $index" class="skill_item" flex="20">
+                        <strong>{{skill.skillName}}</strong>
+                        <br/>
+                        <span>{{skill.proficiency}}</span>
+                    </div>
+                    
+                </div>
+            
+                
+            </div>
+        </md-content>
+</div>

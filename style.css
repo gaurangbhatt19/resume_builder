@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Roboto:wght@100;400&family=Source+Sans+Pro:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Roboto:wght@100;400&family=Source+Sans+Pro:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Roboto:wght@100;400&family=Source+Sans+Pro:wght@300;700&display=swap');
 [ng\:cloak], [ng-cloak], .ng-cloak {
   display: none;
 }
@@ -10,6 +13,7 @@
     background: #9D50BB;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #6E48AA, #9D50BB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+height: 100%;
   }
   .details_page{
       border:purple solid 2px;
@@ -95,4 +99,81 @@ background: linear-gradient(to right, #6E48AA, #9D50BB); /* W3C, IE 10+/ Edge, F
   position: absolute;
   left:20%;
   top: 20%;
+}
+#resume_div{
+width: 70vw;
+padding: 2em 2em;
+margin-left: 2vw;
+margin-right: 4vw;
+margin-top: 2vh;
+border-radius: 8px;
+overflow-y: scroll;
+overflow-x: hidden;
+margin-bottom: 4vh;
+}
+.workexperience{
+  min-width: 40vw;
+  min-height: 40vh;
+  max-height: 80vh;
+  width: 60vw;
+  border-radius:10px;
+  padding-right: 20px;
+  position: absolute;
+  left:20%;
+  top: 10%;
+}
+.resume_container{
+  background: #9D50BB;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6E48AA, #9D50BB);
+  height: 100%;
+}
+#fullname{
+  margin-top:1em;
+  font-family: 'Roboto', sans-serif;
+  font-size: xxx-large;
+}
+#description{
+  margin-top: 1em;
+  font-family: 'Nunito', sans-serif;
+  max-width: 50%;
+}
+#designation{
+  margin-top: 1em;
+  font-family: 'Nunito', sans-serif;
+  max-width: 50%;
+  font-size: x-large;
+  font-weight: bold;
+}
+#contact{
+  margin-top: 1em;
+  
+  font-family: 'Nunito', sans-serif;
+  max-width: 50%;
+  font-size: large;
+}
+.resume_item{
+  padding:auto;
+  font-family: 'Nunito', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 1em;
+  
+}
+
+.professional_summary{
+ 
+}
+.item_value{
+  margin-top: 2em;
+}
+.employeement_history{
+  
+}
+.employeement_history_companyname{
+  font-size:medium;
+  font-weight: bold;
+}
+.skill_item{
+  margin-left: 1em;
 }

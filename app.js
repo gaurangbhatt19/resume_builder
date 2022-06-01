@@ -1,4 +1,4 @@
-var resumebuilder=angular.module("resumebuilder",['ngRoute','resumebuilder.homepage','ngMaterial','resumebuilder.skills','resumebuilder.educationDetails',"resumebuilder.summary","resumebuilder.resumeDetails"])
+var resumebuilder=angular.module("resumebuilder",['ngRoute','resumebuilder.homepage','ngMaterial','resumebuilder.skills','resumebuilder.educationDetails',"resumebuilder.summary","resumebuilder.resumeDetails",'resumebuilder.workexperience','reumebuilder.resume'])
 
 resumebuilder.config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
     $locationProvider.hashPrefix('!');
