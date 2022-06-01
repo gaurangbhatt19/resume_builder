@@ -8,11 +8,12 @@ resume.factory("allformvalues",function(){
         personaldetails:{
             
         },
-        educationaldetails:{
-
-        },
-        workexperience:{
+        educationaldetails:[{
             
+        }],
+        workexperience:{
+            startdate:"",
+            enddate:""
         }
         
         ,skills:{

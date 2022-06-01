@@ -123,9 +123,10 @@ margin-bottom: 4vh;
   top: 10%;
 }
 .resume_container{
-  background: #9D50BB;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #6E48AA, #9D50BB);
+  background-color: #00C9FF;  /* fallback for old browsers */
+  background-color: -webkit-linear-gradient(to left, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
+  background-color: linear-gradient(to right, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   height: 100%;
 }
 #fullname{
@@ -176,4 +177,15 @@ font-family: 'Source Sans Pro', sans-serif;
 }
 .skill_item{
   margin-left: 1em;
+}
+#download_resume{
+  margin-top: 2em;
+  padding:8px 8px;
+  border-radius:4px;
+  color:white;
+
+}
+.heading{
+  border-radius: 10px;
+  padding-bottom:1em;
 }

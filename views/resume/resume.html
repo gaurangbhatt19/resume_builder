@@ -1,10 +1,9 @@
 <div ng-controller="resumeCtrl" layout="column" ng-cloak class="resume_container" layout-align="start center">
-    <!-- <md-content md-colors="{background: 'default-background-hue-3'}" style="margin-bottom:2em" layout-padding>
-        <div class="">
-            <md-button class="md-raised md-primary"><h4>Download Resume</h4></md-button>
-        </div>
-    </md-content> -->
+    <div class="" layout="row" layout-align="center">
+        <md-button class="md-raised md-accent" id="download_resume">Download Resume</md-button>
+    </div>
         <md-content id="resume_div" md-colors="{background: 'default-background-hue-3'}" layout-padding>
+        
             <div class="heading" layout="column">
             <div layout="row" layout-align="start center">
                 <div id="fullname">
@@ -27,7 +26,9 @@
                     <span>{{contact}}</span>
                   </div>
             </div>
+
             </div>
+
             <div class="professional_summary resume_item" layout="column">
                 <h3>PROFESSIONAL SUMMARY</h3> 
                 <md-divider></md-divider> 
