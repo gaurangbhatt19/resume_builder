@@ -64,5 +64,7 @@ console.log(startdatevalue,enddatevalue)
      $location.path("/")
  }
 
+ 
+
 //  values.workexperience.startdate.split(" ").splice(1,4)+" to "+values.workexperience.enddate.split(" ").splice(1,4)
 }])

@@ -27,7 +27,15 @@
     <script src="./views/factory/resumeDetails.js"></script>
     <script src="./views/workexperience/workexperience.js"></script>
     <script src="./views/resume/resume.js"></script>
-    </head>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.1/html2pdf.bundle.js" integrity="sha512-CAlCnxBY4CJKhSvYNsnWtMxKjwLgRhHuJw7wUoOmjlrTDcRLQ5LD9P6YgWETJAmZTurlU86vBovlySF3KvjPeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        function download_resume(){
+            var resume=document.getElementById("resume_div")
+            html2pdfz.from(resume).save()
+        }
+     </script>    
+</head>
 <body>
 
 <main ng-view>
