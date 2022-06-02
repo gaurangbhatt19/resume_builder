@@ -55,7 +55,7 @@
                 <h3>EDUCATION DETAILS</h3>  
                 <md-divider></md-divider>
                 <div layout="row" layout-align="space-between">
-                    <span class="item_value employeement_history_companyname">{{education.degree}}, {{education.fieldofstudy}} {{education.school_name}}</span>
+                    <span class="item_value employeement_history_companyname">{{education.degree}}, {{education.fieldofstudy}}</span>
                     <span class="item_value">{{education.city}}, {{education.state}}</span>
                 </div>
                 <div layout="column" layout-align="start start">
@@ -71,8 +71,8 @@
             <div class="skills resume_item" layout="row">
                 <h3 style="margin-right: 1em">SKILLS</h3>  
                 <md-divider></md-divider>
-                <div class="resume_item" layout="row" layout-align="space-around" layout-wrap="">
-                    <div ng-repeat="skill in skills track by $index" class="skill_item" flex="10">
+                <div class="resume_item" layout="row" layout-align="center center" layout-wrap="">
+                    <div ng-repeat="skill in skills track by $index" class="skill_item" flex="15">
                         <strong>{{skill.skillName}}</strong>
                         <br/>
                         <span>{{skill.proficiency}}</span>

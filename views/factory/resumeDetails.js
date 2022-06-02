@@ -19,22 +19,12 @@ resume.factory("allformvalues",function(){
         ,skills:[
             {id: 0, skillName: "JavaScript", proficiency: "Intermediate"},
             { id: 1, skillName: "Java", proficiency: "Intermediate" },
-            { id: 2, skillName: "Python", proficiency: "Intermediate" },
-            { id: 3, skillName: "Frontend Development", proficiency: "Intermediate" },
-            { id: 4, skillName: "Backend Development", proficiency: "Intermediate" },
+            { id: 2, skillName: "Demo Skill", proficiency: "Intermediate" },
+            { id: 3, skillName: "Demo Skill", proficiency: "Intermediate" },
             {id: 0, skillName: "JavaScript", proficiency: "Intermediate"},
             { id: 1, skillName: "Java", proficiency: "Intermediate" },
-            { id: 2, skillName: "Python", proficiency: "Intermediate" },
-            { id: 3, skillName: "Frontend Development", proficiency: "Intermediate" },
-            { id: 4, skillName: "Backend Development", proficiency: "Intermediate" },
-            {id: 0, skillName: "JavaScript", proficiency: "Intermediate"},
-            { id: 1, skillName: "Java", proficiency: "Intermediate" },
-            { id: 2, skillName: "Python", proficiency: "Intermediate" },
-            { id: 3, skillName: "Frontend Development", proficiency: "Intermediate" },
-            { id: 4, skillName: "Backend Development", proficiency: "Intermediate" },
-            {id: 0, skillName: "JavaScript", proficiency: "Intermediate"},
-            { id: 1, skillName: "Java", proficiency: "Intermediate" },
-            { id: 2, skillName: "Python", proficiency: "Intermediate" }
+            { id: 2, skillName: "Demo Skill", proficiency: "Intermediate" },
+            { id: 3, skillName: "Demo Skill", proficiency: "Intermediate" }
         ],summary:{
 
         }}
