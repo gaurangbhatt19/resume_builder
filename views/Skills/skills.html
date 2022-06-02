@@ -22,23 +22,19 @@
               school
               </span>
           </md-icon>
-          <input required md-no-asterisk name="skill" ng-model="educationDetails.skill"/>
-          <div ng-messages="education_form.school_name.$error">
+          <input md-no-asterisk name="skill" ng-model="skillDetails.skill"/>
+          <!-- <div ng-messages="skills_form.skill.$error">
             <div ng-message="required">This is required.</div>
-          </div>
+          </div> -->
          </md-input-container>
 
          <md-input-container flex="50">
           <label>Professiency level</label>
-          <md-select name="skill_level" ng-model="educationDetails.level" required ng-change="update(skill_values.id,educationDetails.skill,educationDetails.level)">
+          <md-select name="skill_level" ng-model="skillDetails.level" ng-change="update(skill_values.id,skillDetails.skill,skillDetails.level)">
           <md-option value="Begginer">Begginer</md-option>
           <md-option value="Intermediate">Intermediate</md-option>
           <md-option value="Advance">Advance</md-option>
           </md-select>
-          <div ng-messages="education_form.degree.$error">
-            <div ng-message="required">This is required.</div>
-            <!-- <div ng-message="md-maxlength">First Name must have less than 50 characters</div> -->
-          </div>
         </md-input-container>
 
        <div>

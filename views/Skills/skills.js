@@ -69,6 +69,7 @@ skillDetails.controller("skillCtrl",['$scope','$location','skills_values','allfo
 
     $scope.update=function(id,skill,proficiency){
         skills_values.setSkills(id,skill,proficiency)
+        console.log(skills_values.getSkills())
     }
 
 
