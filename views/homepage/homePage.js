@@ -22,4 +22,8 @@ homePage.controller("homepageCtrl",['$scope','$location','allformvalues',functio
     // console.log(path)
       $location.path(path)
   }
+
+  $scope.debug=function(value){
+    console.log(value)
+  }
 }])

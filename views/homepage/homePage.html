@@ -40,9 +40,9 @@
             phone
             </span>
         </md-icon>
-        <input ng-maxlength="10" ng-minlength="10" md-no-asterisk name="phone_number" ng-model="personaldetails.phone_number" >
+        <input ng-maxlength="10" ng-minlength="10" md-no-asterisk name="phone_number" ng-model="personaldetails.phone_number" ng-change="debug(personal_details.phone_number.$error)" >
         <div ng-messages="personal_details.phone_number.$error">
-          <ng-message when="ng-maxlength | ng-minlength">Phone number should have 10 digits</ng-message>
+          <div ng-message="maxlength | minlength">Phone number should have 10 digits</div>
         </div>
       </md-input-container>
       </div>
