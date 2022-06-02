@@ -173,7 +173,8 @@ font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
 }
 .skill_item{
-  margin-left: 8px;
+  margin-left: 1em;
+  padding:2px 2px;
 }
 #download_resume{
   margin-top: 2em;
