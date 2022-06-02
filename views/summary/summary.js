@@ -1,4 +1,4 @@
-var projects=angular.module("resumebuilder.summary",['ngRoute','ngMaterial','resumebuilder.resumeDetails'])
+var projects=angular.module("resumebuilder.summary",['ngRoute','ngMaterial','resumebuilder.resumeDetails',"ngMessages"])
 projects.config(["$routeProvider",function($routeProvider) {
     $routeProvider.when("/summary",{
         templateUrl: "./views/summary/summary.html",

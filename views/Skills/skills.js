@@ -1,4 +1,4 @@
-var skillDetails=angular.module("resumebuilder.skills",['ngRoute','resumebuilder.resumeDetails']).factory("skills_values",function(){
+var skillDetails=angular.module("resumebuilder.skills",['ngRoute','resumebuilder.resumeDetails',"ngMessages"]).factory("skills_values",function(){
     var skill={}
     var skillset=[{
         id:0,

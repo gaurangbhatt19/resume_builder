@@ -1,4 +1,4 @@
-var homePage=angular.module("resumebuilder.homepage",['ngRoute','ngMaterial',"resumebuilder.resumeDetails"])
+var homePage=angular.module("resumebuilder.homepage",['ngRoute','ngMaterial',"resumebuilder.resumeDetails","ngMessages"])
 
 homePage.config(['$routeProvider',function($routeProvider){
     

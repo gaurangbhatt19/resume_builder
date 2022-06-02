@@ -7,7 +7,7 @@
      <form name="personal_details" class="form_details" layout-align="center center">
       <div layout="row">
         <md-input-container class="md-block" flex="25">
-        <label>First Name</label>
+        <label>First Name *</label>
         <md-icon md-font-icon="android" aria-label="android">
           <span class="material-icons">
             account_circle
@@ -15,13 +15,13 @@
         </md-icon>
         <input required md-no-asterisk name="first_name" ng-model="personaldetails.first_name" >
         <div ng-messages="personal_details.first_name.$error">
-          <div ng-message="required">This is required.</div>
+          <ng-message when="required">This is required.</ng-message>
         </div>
 
 
       </md-input-container>
       <md-input-container class="md-block" flex="30">
-        <label>Last Name</label>
+        <label>Last Name *</label>
         <md-icon md-font-icon="android" aria-label="android">
           <span class="material-icons">
             account_circle
@@ -34,15 +34,15 @@
         </div>
       </md-input-container>
       <md-input-container class="md-block" flex="35">
-        <label>Phone Number</label>
+        <label>Phone Number *</label>
         <md-icon md-font-icon="android" aria-label="android">
           <span class="material-icons">
             phone
             </span>
         </md-icon>
-        <input md-maxlength="10" ng-minlength="10" md-no-asterisk name="phone_number" ng-model="personaldetails.phone_number" >
+        <input ng-maxlength="10" ng-minlength="10" md-no-asterisk name="phone_number" ng-model="personaldetails.phone_number" >
         <div ng-messages="personal_details.phone_number.$error">
-          <div ng-message="md-maxlength | ng-minlength">Phone number should have 10 digits</div>
+          <ng-message when="ng-maxlength | ng-minlength">Phone number should have 10 digits</ng-message>
         </div>
       </md-input-container>
       </div>
@@ -63,7 +63,7 @@
         </div>
       </md-input-container>
 
-      <md-input-container class="md-block" flex="35">
+      <md-input-container class="md-block" flex="35" style="margin-left: 2em">
         <label>Email</label>
         <md-icon md-font-icon="android" aria-label="android">
           <span class="material-icons">
@@ -101,7 +101,7 @@
         </md-icon>
         <input md-no-asterisk required name="country" ng-model="personaldetails.country" >
         <div ng-messages="personal_details.country.$error">
-          <div ng-message="md-maxlength">This is required.</div>
+          <div ng-message="required">This is required.</div>
         </div>
       </md-input-container>
 

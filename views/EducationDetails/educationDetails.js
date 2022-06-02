@@ -1,4 +1,4 @@
-var app=angular.module('resumebuilder.educationDetails', ['ngRoute','ngMaterial','resumebuilder.resumeDetails'])
+var app=angular.module('resumebuilder.educationDetails', ['ngRoute','ngMaterial','resumebuilder.resumeDetails',"ngMessages"])
 
 app.factory("education",function(){
   let education={}
